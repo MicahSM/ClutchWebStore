@@ -1,0 +1,28 @@
+    <!-------- Navbar -------->
+    <div >
+        <ul class="nav navbar-inverse nav-pills" role="tablist">
+            <li ng-class="{active:content.isSet(1) }"><a href ng-click="content.setcontent(1)" >Home</a></li>
+            <li ng-class="{active:content.isSet(2) }"><a href ng-click="content.setcontent(2)">Snacks</a></li>
+            <li ng-class="{active:content.isSet(3) }"><a href ng-click="content.setcontent(3)" >Drinks</a></li>
+            <li ng-class="{active:content.isSet(4) }"><a href ng-click="content.setcontent(4)" >Gaming</a></li>
+            <li class="navbar-right"><a href='#' >Search</a></li>
+        </ul>
+        
+    </div>
+
+    <!-------- Content based on Button Press ------>
+  <div class="container">
+    <div ng-show="content.isSet(1)" ng-include="'product-home.html'">
+          </div>
+            <div ng-show="content.isSet(2)" ng-include="'product-food.html'">
+          </div>
+            <div ng-show="content.isSet(3)" ng-include="'product-drinks.html'">
+          </div>
+            <div ng-show="content.isSet(4)" ng-include="'product-gaming.html'">
+          </div>
+    </div>
+    
+    
+    
+    </section>    
+    
