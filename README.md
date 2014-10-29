@@ -1,0 +1,1 @@
+Simple Testing Grounds for design of a Store Web App, stored in a single Page, and Usable on all platforms.
